@@ -9,6 +9,9 @@ const Comments = props => {
   return (
     <div>
       {/* map through the comments prop and render a Comment for every piece of data */}
+      {comments.map(varComment => {
+        return <Comment comment={varComment} key={varComment.id} />
+      })}
     </div>
   );
 };
